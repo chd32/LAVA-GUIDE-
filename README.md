@@ -126,7 +126,7 @@ sed -i -e "s/^indexer *=.*/indexer = \"$indexer\"/" $HOME/.lava/config/config.to
 
 ## Download addrbook
 ```python
-wget -O $HOME/.lava/config/addrbook.json "https://raw.githubusercontent.com/obajay/nodes-Guides/main/Projects/Lava_Network/addrbook.json"
+wget -O $HOME/.lava/config/addrbook.json "https://github.com/chd32/LAVA-GUIDE-/blob/main/addrbook.json"
 ```
 ## StateSync
 ```python
