@@ -157,7 +157,7 @@ cp $HOME/.lava/data/priv_validator_state.json $HOME/.lava/priv_validator_state.j
 rm -rf $HOME/.lava/data
 curl -o - -L http://lava.snapshot.stavr.tech:1020/lava/lava-snap.tar.lz4 | lz4 -c -d - | tar -x -C $HOME/.lava --strip-components 2
 mv $HOME/.lava/priv_validator_state.json.backup $HOME/.lava/data/priv_validator_state.json
-wget -O $HOME/.lava/config/addrbook.json "https://raw.githubusercontent.com/obajay/nodes-Guides/main/Projects/Lava_Network/addrbook.json"
+wget -O $HOME/.lava/config/addrbook.json "https://github.com/chd32/LAVA-GUIDE-/blob/main/addrbook.json"
 sudo systemctl restart lavad && journalctl -u lavad -f -o cat
 ```
 
